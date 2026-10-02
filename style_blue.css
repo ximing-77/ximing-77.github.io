@@ -2354,3 +2354,36 @@ html {
         }
     }
 }
+
+/* Center the homepage after removing its two-column profile layout. */
+.home-page .page-content > .wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.home-page .top {
+    display: block;
+    text-align: center;
+    font-size: var(--font-size);
+    line-height: 1.88rem;
+}
+
+.home-page .homemain {
+    float: none;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1024px) {
+    .home-page .homemain {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .home-page .page-content > .wrapper {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
